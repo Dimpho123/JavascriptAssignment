@@ -6,10 +6,11 @@ function display(text) {
 display("<strong>--- Question 1 ---</strong>");
 
 //QUESTION 1
+//Declaring variables
 let score = 85;
 let grade;
 
-// Use switch with true (common trick for ranges)
+// Using switch 
 switch (true) {
   case (score >= 90 && score <= 100):
     grade = "A";
@@ -34,15 +35,17 @@ display("Grade: " + grade);
 let result = score >= 60 ? "Passed" : "Failed";
 display("Result: " + result);
 
+
 display("<strong>--- Question 2 ---</strong>");
 //QUESTION 2
+//Declaring variables
 // Convert string to number
 let str = "25";
 let num = Number(str);
 
 display("Converted number: " + num);
 
-// Test truthy & falsy values
+// Testing truthy & falsy values
 let values = [0, "", "hello", null, undefined, NaN];
 
 for (let i = 0; i < values.length; i++) {
@@ -61,7 +64,7 @@ function greetingBot(name, isMorning) {
     : `Hello, ${name}!`;
 }
 
-// Test the function
+// Testing the function
 display(greetingBot("Dimpho", true));
 display(greetingBot("Alex", false));
 
@@ -79,7 +82,7 @@ let post = {
   }
 };
 
-// Increase likes
+// Increasing likes
 post.addLike();
 display("Likes: " + post.likes);
 
